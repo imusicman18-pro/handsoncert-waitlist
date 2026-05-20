@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-[#0D1425] border-b border-[#1E2D4A]">
       <div className="max-w-3xl mx-auto px-6 flex items-center justify-between h-[58px] gap-3">
-        <img src="/handsoncert-logo.png" alt="HandsOnCert" className="h-9 w-auto" />
+        <img src="/handsoncert-logo.png" alt="HandsOnCert" className="h-11 w-auto" />
         <span className="text-xs bg-[#141E33] border border-[#1E2D4A] rounded-full px-3 py-1 text-[#64748B] whitespace-nowrap">
           Learn · Build · Prove
         </span>
