@@ -3,8 +3,8 @@ export default function TrustBar() {
     <div className="bg-[#0A0F1E] border-b border-[#1A2540] py-4 px-6">
       <div className="max-w-3xl mx-auto flex justify-center gap-8 flex-wrap">
         {[
-          'AZ-104 ready at launch',
-          'Verified against official exam objectives daily',
+          'AZ-104 live at launch',
+          'Azure · AWS · GCP paths',
           'Real GitHub commits — not simulations',
         ].map((item) => (
           <div key={item} className="flex items-center gap-2 text-xs text-[#64748B]">

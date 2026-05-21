@@ -12,7 +12,7 @@ const steps = [
   {
     num: '3',
     title: 'Your evidence commits to GitHub automatically',
-    body: 'Screenshots, configs, ARM templates, and KQL queries land in the right folders with proper commit messages.',
+    body: 'Screenshots, configs, ARM templates, and KQL queries land in the right folders with proper commit messages. Available on Single Cert and All-Access plans.',
   },
   {
     num: '4',

@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'HandsOnCert — Learn · Build · Prove',
   description:
-    'Guided cloud certification platform. Get your cert badge AND a GitHub portfolio employers can verify. AZ-104 launching first.',
+    'Guided cloud certification platform for Azure, AWS, and GCP. Get your cert badge AND a HandsOnCert-built GitHub portfolio employers can verify. AZ-104 launching first.',
   openGraph: {
     title: 'HandsOnCert — Learn · Build · Prove',
     description:
-      'Hands-on cloud projects mapped to real exam objectives. AI mentor included. GitHub commits automated.',
+      'Hands-on cloud projects mapped to real exam objectives across Azure, AWS, and GCP. Your HandsOnCert-built GitHub portfolio proves you did the work.',
     url: 'https://www.handsoncert.com',
     siteName: 'HandsOnCert',
     type: 'website',
