@@ -15,8 +15,11 @@ export default function Hero() {
         <p className="text-sm font-medium text-[#64748B] tracking-[0.12em] uppercase mb-4">
           Learn <span className="text-[#1A56DB]">·</span> Build <span className="text-[#1A56DB]">·</span> Prove
         </p>
+        <p className="text-[17px] text-[#94A3B8] leading-[1.7] mb-4">
+          Anyone can pass a multiple choice exam. HandsOnCert makes you prove it — with real deployments, real commits, and a GitHub portfolio employers can verify.
+        </p>
         <p className="text-[17px] text-[#94A3B8] leading-[1.7] mb-9">
-          Anyone can pass a multiple choice exam. HandsOnCert makes you prove it — with real deployments, real commits, and a GitHub portfolio employers can verify. The cert gets you the interview. Your HandsOnCert-built GitHub portfolio gets you the job.
+          The cert gets you the interview. Your HandsOnCert-built GitHub portfolio gets you the job.
         </p>
         <WaitlistForm />
         <p className="text-xs text-[#475569] mt-3">Free to start. No credit card required.</p>
