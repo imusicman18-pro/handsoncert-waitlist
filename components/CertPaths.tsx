@@ -90,7 +90,13 @@ export default function CertPaths() {
                 {cloud.certs.map((cert) => (
                   <div key={cert.label} className="flex items-center justify-between gap-2">
                     <span className="text-[12px] text-[#94A3B8]">{cert.label}</span>
-                    <span className={cert.live ? livePill : soonPill}>{cert.tag}</span>
+                    <span
+                      className="text-[11px] font-semibold px-2.5 py-1 rounded-full border whitespace-nowrap"
+                      style={cert.live
+                        ? { background: '#052E16', color: '#6EE7B7', borderColor: '#065F46' }
+                        : { background: '#0A0F1E', color: '#475569', borderColor: '#1A2540', fontWeight: 400 }
+                      }
+                    >{cert.tag}</span>
                   </div>
                 ))}
               </div>
