@@ -93,7 +93,7 @@ export default function CertPaths() {
                     <span
                       className="text-[11px] font-semibold px-2.5 py-1 rounded-full border whitespace-nowrap"
                       style={cert.live
-                        ? { background: '#052E16', color: '#6EE7B7', borderColor: '#065F46' }
+                        ? { background: '#052E16', color: '#6EE7B7', borderColor: '#065F46', fontWeight: 600 }
                         : { background: '#0A0F1E', color: '#475569', borderColor: '#1A2540', fontWeight: 400 }
                       }
                     >{cert.tag}</span>
