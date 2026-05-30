@@ -117,10 +117,18 @@ const HTML = `<!DOCTYPE html>
   }
 
   .hero h1 {
-    font-size: clamp(34px, 5.5vw, 52px);
-    font-weight: 800; line-height: 1.1;
+    font-size: clamp(38px, 6vw, 60px);
+    font-weight: 900; line-height: 1.1;
     color: var(--text-1); letter-spacing: -0.03em;
     margin-bottom: 1.25rem;
+  }
+  .hero h1 .h1-setup {
+    display: block;
+    font-size: clamp(17px, 2vw, 22px);
+    font-weight: 600;
+    color: var(--text-3);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5em;
   }
   .hero h1 em { font-style: normal; color: var(--blue-light); }
 
@@ -484,7 +492,7 @@ const HTML = `<!DOCTYPE html>
       <span class="live-dot"></span>
       Platform live — 7 cert paths available now
     </div>
-    <h1>The cert gets you the interview.<br><em>HandsOnCert-built GitHub portfolio gets you the job.</em></h1>
+    <h1><span class="h1-setup">The cert gets you the interview.</span><em>HandsOnCert-built GitHub<br>portfolio gets you the job.</em></h1>
     <p class="hero-sub">
       Hands-on cloud labs mapped to real exam objectives. Every project you complete
       commits real evidence to GitHub — the portfolio employers actually click into.
