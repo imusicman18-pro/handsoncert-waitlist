@@ -77,21 +77,6 @@ export default function PricingSection() {
           </div>
         </div>
 
-        {/* Early bird banner */}
-        <div className="bg-[#0B1E3D] border border-[#1E4080] rounded-xl px-5 py-4 flex justify-between items-center gap-4 mb-4">
-          <div>
-            <strong className="block text-[13px] font-semibold text-[#93C5FD]">
-              Early bird — all-access for $89
-            </strong>
-            <span className="text-[12px] text-[#4FC3F7]">
-              First 200 signups only. Lock in all-access at launch price before it goes to $199.
-            </span>
-          </div>
-          <span className="text-[20px] font-bold text-[#93C5FD] whitespace-nowrap">
-            $89<sub className="text-[12px] font-normal text-[#4FC3F7]"> one-time · 200 spots</sub>
-          </span>
-        </div>
-
         <p className="text-center text-[12px] text-[#475569]">
           All purchases include lifetime access · No subscriptions · No renewal fees
         </p>
