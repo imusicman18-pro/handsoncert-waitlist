@@ -84,7 +84,7 @@ export default function PricingSection() {
               Early bird — all-access for $89
             </strong>
             <span className="text-[12px] text-[#4FC3F7]">
-              First 200 signups only. Lock in all-access at launch price before it goes to $129.
+              First 200 signups only. Lock in all-access at launch price before it goes to $199.
             </span>
           </div>
           <span className="text-[20px] font-bold text-[#93C5FD] whitespace-nowrap">
