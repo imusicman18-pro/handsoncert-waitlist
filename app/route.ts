@@ -971,7 +971,7 @@ const HTML = `<!DOCTYPE html>
     <div class="footer-links">
       <a href="https://app.handsoncert.com">App</a>
       <a href="https://app.handsoncert.com/certs">Cert paths</a>
-      <a href="mailto:hello@handsoncert.com">Contact</a>
+      <a href="https://app.handsoncert.com/contact">Contact</a>
     </div>
     <div class="footer-copy">handsoncert.com · Learn · Build · Prove</div>
   </div>
