@@ -6,7 +6,7 @@ const HTML = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HandsOnCert — Learn · Build · Prove</title>
-<meta name="description" content="Hands-on cloud certification labs with real projects, GitHub portfolio commits, and an AI mentor. 7 cert paths live now. Pay once per cert — no subscription.">
+<meta name="description" content="Hands-on cloud certification labs with real projects, GitHub portfolio commits, and an AI mentor. 21 cert paths live now. Pay once per cert — no subscription.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -479,7 +479,7 @@ const HTML = `<!DOCTYPE html>
   <div class="nav-inner">
     <a href="/" class="logo">HandsOn<span>Cert</span></a>
     <div class="nav-right">
-      <div class="nav-pill">7 cert paths live</div>
+      <div class="nav-pill">21 cert paths live</div>
       <a href="https://app.handsoncert.com" class="nav-cta">Start building →</a>
     </div>
   </div>
@@ -490,7 +490,7 @@ const HTML = `<!DOCTYPE html>
   <div class="hero-inner">
     <div class="live-badge">
       <span class="live-dot"></span>
-      Platform live — 13 cert paths available now
+      Platform live — 21 cert paths available now
     </div>
     <p style="font-size:19px; color:#94A3B8; margin-bottom:0.5rem;">
       The cert gets you the interview.
@@ -523,11 +523,11 @@ const HTML = `<!DOCTYPE html>
 <div class="stat-bar">
   <div class="stat-inner">
     <div class="stat-item">
-      <div class="stat-num">7<span>+</span></div>
+      <div class="stat-num">21</div>
       <div class="stat-label">Live cert paths</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">34</div>
+      <div class="stat-num">90<span>+</span></div>
       <div class="stat-label">Total projects</div>
     </div>
     <div class="stat-item">
@@ -881,7 +881,7 @@ const HTML = `<!DOCTYPE html>
     <div class="price-note">
       <div class="pn-left">
         <strong>All-Access Pass — all current + future cert paths, forever</strong>
-        <span>Every cert that ships, past and future. One payment. Early adopter pricing.</span>
+        <span>Every cert that ships, past and future. One payment. Lifetime access.</span>
       </div>
       <div class="pn-price">$199<sub> one-time</sub></div>
     </div>
