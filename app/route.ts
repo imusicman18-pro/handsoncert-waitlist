@@ -892,19 +892,21 @@ const HTML = `<!DOCTYPE html>
 <section class="section">
   <div class="sec-inner">
     <div class="sec-eyebrow">Roadmap</div>
-    <div class="sec-title">Multi-cloud. Multi-track. 20+ certs coming.</div>
-    <p class="sec-sub">Every cert on the roadmap is built from official objectives. Coming Soon cards are live in the app — hit Notify Me to get first access.</p>
+    <div class="sec-title">Multi-cloud. Multi-track. 21 cert paths live.</div>
+    <p class="sec-sub">Every cert path built from official exam objectives. All 21 paths live now — SC-500 and AI-901 coming when Microsoft publishes objectives.</p>
 
     <div class="roadmap-track">
       <div class="track-label"><span class="track-dot" style="background:#0078D4;"></span>Microsoft Azure</div>
       <div class="pill-row">
         <span class="pill live">AZ-104 ✓</span>
         <span class="pill live">AZ-900 ✓</span>
-        <span class="pill">AZ-305</span>
-        <span class="pill">AZ-400</span>
-        <span class="pill">SC-300</span>
-        <span class="pill">AI-900</span>
-        <span class="pill">DP-900</span>
+        <span class="pill live">AZ-305 ✓</span>
+        <span class="pill live">AZ-400 ✓</span>
+        <span class="pill live">SC-300 ✓</span>
+        <span class="pill live">SC-900 ✓</span>
+        <span class="pill live">DP-900 ✓</span>
+        <span class="pill">SC-500 (coming soon)</span>
+        <span class="pill">AI-901 (coming soon)</span>
       </div>
     </div>
 
@@ -913,11 +915,10 @@ const HTML = `<!DOCTYPE html>
       <div class="pill-row">
         <span class="pill live">SAA-C03 ✓</span>
         <span class="pill live">CLF-C02 ✓</span>
-        <span class="pill">DVA-C02</span>
-        <span class="pill">SOA-C02</span>
-        <span class="pill">SAP-C02</span>
-        <span class="pill">AWS Security</span>
-        <span class="pill">AWS Database</span>
+        <span class="pill live">DVA-C02 ✓</span>
+        <span class="pill live">SOA-C03 ✓</span>
+        <span class="pill live">SAP-C02 ✓</span>
+        <span class="pill live">SCS-C03 ✓</span>
       </div>
     </div>
 
@@ -925,9 +926,9 @@ const HTML = `<!DOCTYPE html>
       <div class="track-label"><span class="track-dot" style="background:#34A853;"></span>Google Cloud</div>
       <div class="pill-row">
         <span class="pill live">GCP-ACE ✓</span>
-        <span class="pill">GCP-PCA</span>
-        <span class="pill">GCP-PDE</span>
-        <span class="pill">GCP-PCSE</span>
+        <span class="pill live">GCP-PCA ✓</span>
+        <span class="pill live">GCP-PDE ✓</span>
+        <span class="pill live">GCP-PCSE ✓</span>
       </div>
     </div>
 
@@ -942,7 +943,8 @@ const HTML = `<!DOCTYPE html>
       <div class="track-label"><span class="track-dot" style="background:#326CE5;"></span>CNCF / Kubernetes</div>
       <div class="pill-row">
         <span class="pill live">CKA ✓</span>
-        <span class="pill">CKAD</span>
+        <span class="pill live">CKAD ✓</span>
+        <span class="pill live">CKS ✓</span>
       </div>
     </div>
   </div>
