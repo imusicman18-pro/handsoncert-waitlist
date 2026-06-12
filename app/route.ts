@@ -670,8 +670,8 @@ const HTML = `<!DOCTYPE html>
       <!-- Coming soon teaser -->
       <div class="cert-card" style="border-style: dashed; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 110px; gap: 6px;">
         <div style="font-size: 11px; color: var(--text-5); font-family: var(--mono);">Coming next</div>
-        <div style="font-size: 13px; font-weight: 700; color: var(--text-3);">DVA-C02 · AZ-305 · CKAD</div>
-        <div style="font-size: 11px; color: var(--text-5);">+ 17 more on the roadmap</div>
+        <div style="font-size: 13px; font-weight: 700; color: var(--text-3);">SC-500 · AI-901</div>
+        <div style="font-size: 11px; color: var(--text-5);">Azure Cloud & AI Security · Azure AI Fundamentals</div>
       </div>
 
     </div>
@@ -805,7 +805,7 @@ const HTML = `<!DOCTYPE html>
       <div class="step-block">
         <div class="step-n">STEP 01</div>
         <h3>Pick your cert path</h3>
-        <p>Choose from 7 live paths across Azure, AWS, GCP, HashiCorp, and CNCF. Project 1 of any cert is completely free.</p>
+        <p>Choose from 21 live paths across Azure, AWS, GCP, HashiCorp, and CNCF. Project 1 of any cert is completely free.</p>
       </div>
       <div class="step-block">
         <div class="step-n">STEP 02</div>
