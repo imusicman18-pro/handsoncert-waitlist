@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     title: 'HandsOnCert — Learn · Build · Prove',
     description: 'Get certified AND build a GitHub portfolio employers can verify.',
   },
+  verification: {
+    google: 'Rz7JBMdk6TFZSDJ_VzeEYaSNX3Zjrk5g5idui8bD4zs',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
