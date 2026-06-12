@@ -676,10 +676,8 @@ const HTML = `<!DOCTYPE html>
 
     </div>
 
-    <div style="text-align:center; margin-top: 0.5rem;">
-      <a href="https://app.handsoncert.com" style="font-size:13px; color: var(--blue-light); text-decoration: none; font-family: var(--mono);">
-        Browse all certs + notify me → app.handsoncert.com
-      </a>
+    <div style="text-align:center; margin-top: 1.25rem;">
+      <a href="/certs/" class="btn-ghost" style="font-size:14px;">View all 21 certs →</a>
     </div>
   </div>
 </section>
