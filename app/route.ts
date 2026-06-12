@@ -7,6 +7,7 @@ const HTML = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HandsOnCert — Learn · Build · Prove</title>
 <meta name="description" content="Hands-on cloud certification labs with real projects, GitHub portfolio commits, and an AI mentor. 21 cert paths live now. Pay once per cert — no subscription.">
+<meta name="google-site-verification" content="Rz7JBMdk6TFZSDJ_VzeEYaSNX3Zjrk5g5idui8bD4zs">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
