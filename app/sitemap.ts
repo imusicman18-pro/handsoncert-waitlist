@@ -3,6 +3,12 @@ import type { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
+      url: 'https://www.handsoncert.com/certs/',
+      lastModified: new Date('2026-06-11'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: 'https://www.handsoncert.com/certs/az-104/',
       lastModified: new Date('2026-06-11'),
       changeFrequency: 'monthly',
