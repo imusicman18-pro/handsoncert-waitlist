@@ -3,6 +3,12 @@ import type { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
+      url: 'https://www.handsoncert.com/hashicorp/',
+      lastModified: new Date('2026-06-12'),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
       url: 'https://www.handsoncert.com/gcp/',
       lastModified: new Date('2026-06-12'),
       changeFrequency: 'weekly',
