@@ -52,9 +52,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.handsoncert.com/certs/',
-      lastModified: new Date('2026-06-11'),
+      lastModified: new Date('2026-07-28'),
       changeFrequency: 'weekly',
       priority: 0.9,
+    },
+    {
+      url: 'https://www.handsoncert.com/certs/md-102/',
+      lastModified: new Date('2026-07-28'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
       url: 'https://www.handsoncert.com/certs/az-104/',

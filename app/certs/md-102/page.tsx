@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "CKS Hands-On Labs | HandsOnCert",
-  description: "CKS Certified Kubernetes Security Specialist hands-on labs. 5 real security hardening projects with Falco, OPA Gatekeeper, and Trivy, auto-committed to your GitHub portfolio. $79 one-time.",
+  title: "MD-102 Hands-On Labs | HandsOnCert",
+  description: "MD-102 Endpoint Administrator hands-on labs. 5 real Microsoft Intune projects, auto-committed to your GitHub portfolio. $49 one-time, Project 1 free.",
   alternates: {
-    canonical: "https://www.handsoncert.com/certs/cks/",
+    canonical: "https://www.handsoncert.com/certs/md-102/",
   },
   openGraph: {
-    title: "CKS Hands-On Labs | HandsOnCert",
-    description: "CKS Certified Kubernetes Security Specialist hands-on labs. 5 real security hardening projects with Falco, OPA Gatekeeper, and Trivy, auto-committed to your GitHub portfolio. $79 one-time.",
+    title: "MD-102 Hands-On Labs | HandsOnCert",
+    description: "MD-102 Endpoint Administrator hands-on labs. 5 real Microsoft Intune projects, auto-committed to your GitHub portfolio. $49 one-time, Project 1 free.",
     type: 'website',
-    url: "https://www.handsoncert.com/certs/cks/",
+    url: "https://www.handsoncert.com/certs/md-102/",
   },
 }
 
@@ -27,14 +27,14 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "CNCF",
-      "item": "https://www.handsoncert.com/cncf/"
+      "name": "Cert paths",
+      "item": "https://www.handsoncert.com/certs/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "CKS",
-      "item": "https://www.handsoncert.com/certs/cks/"
+      "name": "MD-102",
+      "item": "https://www.handsoncert.com/certs/md-102/"
     }
   ]
 }
@@ -42,34 +42,34 @@ const breadcrumbSchema = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to complete the CKS hands-on lab path on HandsOnCert",
-  "description": "5 hands-on projects mapped to CKS exam objectives, with evidence auto-committed to your GitHub portfolio.",
-  "totalTime": "PT14H",
+  "name": "How to complete the MD-102 hands-on lab path on HandsOnCert",
+  "description": "5 hands-on projects mapped to MD-102 exam objectives, with evidence auto-committed to your GitHub portfolio.",
+  "totalTime": "PT10H",
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Cluster Setup and Hardening",
-      "text": "Run kube-bench CIS Kubernetes Benchmark, harden API server flags (disable anonymous auth, enable audit logging), configure default-deny NetworkPolicies, and encrypt secrets at rest in etcd. Commit your kube-bench results and hardening configurations."
+      "name": "Deploy Windows 11 with Windows Autopilot",
+      "text": "Create a Windows Autopilot deployment profile, configure the Enrollment Status Page, register a device using its hardware hash, and complete a user-driven Autopilot deployment of Windows 11. Commit your Autopilot profile configuration and enrollment evidence."
     },
     {
       "@type": "HowToStep",
-      "name": "System Hardening",
-      "text": "Create a custom AppArmor profile and apply it to a pod via annotation, configure a seccomp profile with a syscall allowlist, and deploy pods with dropped capabilities and read-only root filesystem. Commit your AppArmor/seccomp profiles and pod security contexts."
+      "name": "Enroll and Manage Devices in Microsoft Intune",
+      "text": "Configure automatic enrollment in Microsoft Intune, set enrollment restrictions by platform, join a Windows device to Microsoft Entra ID, and confirm it appears as managed. Commit your enrollment configuration and device inventory screenshots."
     },
     {
       "@type": "HowToStep",
-      "name": "Minimize Microservice Vulnerabilities",
-      "text": "Enforce Pod Security Standards on a namespace, deploy OPA Gatekeeper with a custom ConstraintTemplate blocking privileged containers, and secure Kubernetes Secrets with disabled service account token automounting. Commit your Gatekeeper policies and PSS configuration."
+      "name": "Configure Device Configuration and Compliance Policies",
+      "text": "Create a device configuration profile from the settings catalog, build a compliance policy defining minimum OS and BitLocker requirements, and assign both to a device group. Commit your configuration profile and compliance policy definitions."
     },
     {
       "@type": "HowToStep",
-      "name": "Supply Chain Security",
-      "text": "Scan a container image with Trivy and output CRITICAL CVEs to a file, write a secure multi-stage Dockerfile with a non-root user, and configure an OPA constraint restricting images to trusted registries. Commit your Trivy scan results and secure Dockerfile."
+      "name": "Protect Endpoints with Compliance, Conditional Access and Defender",
+      "text": "Connect Microsoft Defender for Endpoint to Intune, configure a device risk-based Conditional Access policy, and require compliant devices for access to Microsoft 365. Commit your Conditional Access policy and Defender connector evidence."
     },
     {
       "@type": "HowToStep",
-      "name": "Monitoring, Logging and Runtime Security",
-      "text": "Deploy Falco and write a custom rule detecting sensitive file access in containers, configure a Kubernetes audit policy capturing secret access and exec events, and deploy an immutable container configuration with read-only root filesystem. Commit your Falco rules and audit policy."
+      "name": "Deploy and Manage Applications with Intune",
+      "text": "Add a Microsoft Store app and a Win32 (.intunewin) line-of-business app to Intune, configure required and available assignments, and verify installation on a managed device. Commit your app deployment configuration and install status."
     }
   ]
 }
@@ -80,50 +80,50 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Are the CKS hands-on labs free?",
+      "name": "Are the MD-102 hands-on labs free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Project 1 (Cluster Hardening) is completely free, including unlimited access to Cert Buddy for that project and the manual GitHub commit workflow. The remaining 4 projects unlock for a one-time payment of $79."
+        "text": "Project 1 (Deploy Windows with Windows Autopilot) is completely free, including unlimited access to Cert Buddy for that project and the manual GitHub commit workflow. The remaining 4 projects unlock for a one-time payment of $49."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need CKA before CKS?",
+      "name": "Do I need a Microsoft 365 trial for MD-102 labs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. CKS requires an active CKA certification as a prerequisite — set by the Linux Foundation/CNCF, not by HandsOnCert. CKS builds directly on CKA knowledge and adds security-specific tooling on top."
+        "text": "Yes. MD-102 labs use Microsoft Intune and Microsoft Entra ID, both available via a free 30-day Microsoft 365 E5 trial (which includes Intune Plan 1 and Entra ID P2). All labs are designed to complete within the trial period."
       }
     },
     {
       "@type": "Question",
-      "name": "What tools do the CKS labs cover?",
+      "name": "How does the GitHub portfolio auto-commit work for MD-102?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "HandsOnCert's CKS labs cover kube-bench, AppArmor, seccomp, OPA Gatekeeper, Trivy, and Falco — the same security tooling tested on the actual CKS exam, applied to real kind clusters and (for cluster hardening) an optional kubeadm-on-EC2 setup."
+        "text": "When you mark a lab step complete, HandsOnCert commits your configuration screenshots and policy definitions directly to your own GitHub repository via OAuth. Each project gets its own folder with a unique enrollment code."
       }
     },
     {
       "@type": "Question",
-      "name": "How does the GitHub portfolio work for CKS labs?",
+      "name": "How long does the MD-102 path take to complete?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When you complete a lab step, HandsOnCert commits your actual Falco rules, OPA Rego policies, Trivy scan output, and hardening configurations to your own GitHub repository — a portfolio that demonstrates real platform security knowledge, which is rare and valuable to employers."
+        "text": "The 5 projects take approximately 10 hours total, covering Windows deployment, device enrollment, configuration and compliance, endpoint protection, and application management — the same domains tested on the MD-102 exam."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does the CKS path take to complete?",
+      "name": "Is MD-102 a good pairing with SC-300 or AZ-104?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 5 projects take approximately 14 hours total, covering cluster setup/hardening, system hardening, microservice vulnerabilities, supply chain security, and runtime security — the same domains tested on the CKS exam."
+        "text": "Yes. MD-102 (Endpoint Administrator) focuses on managing devices and apps with Microsoft Intune, SC-300 (Identity and Access Administrator) specializes in Microsoft Entra ID, and AZ-104 (Azure Administrator) covers broader Azure infrastructure. MD-102 pairs especially well with SC-300 for modern-workplace and Microsoft 365 administration roles."
       }
     },
     {
       "@type": "Question",
-      "name": "Is CKS the hardest Kubernetes certification?",
+      "name": "Did MD-102 replace MD-100 and MD-101?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, CKS is widely considered the most difficult of the three CNCF Kubernetes certifications. It requires CKA-level knowledge plus an entirely new layer of security tooling, all under the same 2-hour performance-based exam format."
+        "text": "Yes. MD-102 (Endpoint Administrator) consolidated and replaced the retired MD-100 and MD-101 exams. It is now the single associate-level exam for the Endpoint Administrator certification, centered on Microsoft Intune and modern endpoint management."
       }
     }
   ]
@@ -132,8 +132,8 @@ const faqSchema = {
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  "name": "CKS Hands-On Lab Path",
-  "description": "5 hands-on projects mapped to CKS exam objectives, with GitHub portfolio auto-commit.",
+  "name": "MD-102 Hands-On Lab Path",
+  "description": "5 hands-on projects mapped to MD-102 exam objectives, with GitHub portfolio auto-commit.",
   "provider": {
     "@type": "Organization",
     "name": "HandsOnCert",
@@ -141,7 +141,7 @@ const courseSchema = {
   },
   "offers": {
     "@type": "Offer",
-    "price": "79",
+    "price": "49",
     "priceCurrency": "USD"
   }
 }
@@ -217,9 +217,9 @@ footer a { color: var(--accent); text-decoration: none; margin: 0 12px; }
   .cta-section { padding: 40px 24px; }
 }`
 
-export default function CksPage() {
+export default function Md102Page() {
   return (
-    <div style={{ '--provider-color': "#326CE5" } as React.CSSProperties}>
+    <div style={{ '--provider-color': "#0078D4" } as React.CSSProperties}>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
@@ -241,75 +241,75 @@ export default function CksPage() {
   <nav className="breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span>›</span>
-    <a href="/cncf/">CNCF</a>
+    <a href="/certs/">Cert paths</a>
     <span>›</span>
-    <span>CKS</span>
+    <span>MD-102</span>
   </nav>
 </div>
 
 <div className="container">
   <div className="hero">
-    <div className="badge">✓ Live now — <span className="cert-provider-tag" style={{ marginLeft: '4px' }}>CNCF</span> 5 hands-on projects</div>
-    <h1>CKS Hands-On Labs<br /><em>Real Kubernetes Security. Real GitHub portfolio.</em></h1>
-    <p className="hero-desc">Five real Certified Kubernetes Security Specialist projects mapped directly to CKS exam objectives. Mark a step complete and HandsOnCert commits the evidence — Falco rules, OPA Gatekeeper policies, Trivy scan results — straight to your own GitHub repo. The portfolio employers actually click into.</p>
+    <div className="badge">✓ Live now — <span className="cert-provider-tag" style={{ marginLeft: '4px' }}>M365</span> 5 hands-on projects</div>
+    <h1>MD-102 Hands-On Labs<br /><em>Real Intune. Real GitHub portfolio.</em></h1>
+    <p className="hero-desc">Five real Endpoint Administrator projects mapped directly to the MD-102 exam objectives. Mark a step complete and HandsOnCert commits the evidence — Autopilot profiles, compliance policies, app deployments — straight to your own GitHub repo. The portfolio employers actually click into.</p>
     <div className="hero-ctas">
       <a href="https://app.handsoncert.com/signup" className="btn-primary">Start Free →</a>
       <a href="#projects" className="btn-secondary">See the 5 projects</a>
     </div>
-    <p className="hero-note">$79 one-time · Project 1 free · No subscription</p>
+    <p className="hero-note">$49 one-time · Project 1 free · No subscription</p>
   </div>
 
   <div className="stats">
     <div className="stat"><div className="stat-num">5</div><div className="stat-label">Hands-on projects</div></div>
-    <div className="stat"><div className="stat-num">14h</div><div className="stat-label">Estimated time</div></div>
-    <div className="stat"><div className="stat-num">$445</div><div className="stat-label">CKS exam cost</div></div>
-    <div className="stat"><div className="stat-num">$79</div><div className="stat-label">HandsOnCert price</div></div>
+    <div className="stat"><div className="stat-num">10h</div><div className="stat-label">Estimated time</div></div>
+    <div className="stat"><div className="stat-num">$165</div><div className="stat-label">MD-102 exam cost</div></div>
+    <div className="stat"><div className="stat-num">$49</div><div className="stat-label">HandsOnCert price</div></div>
   </div>
 </div>
 
 <section id="projects">
   <div className="container">
     <h2>What you'll build</h2>
-    <p className="sec-sub">Every project maps to an official CKS exam domain. Each one ends with evidence committed to your GitHub repo automatically.</p>
+    <p className="sec-sub">Every project maps to an official MD-102 exam domain. Each one ends with evidence committed to your GitHub repo automatically.</p>
     <div className="steps">
       <div className="step">
         <div className="step-num">1</div>
         <div className="step-text">
-          <h3>Cluster Setup and Hardening — Free</h3>
-          <p>Run kube-bench CIS Kubernetes Benchmark, harden API server flags (disable anonymous auth, enable audit logging), configure default-deny NetworkPolicies, and encrypt secrets at rest in etcd. Commit your kube-bench results and hardening configurations.</p>
-          <span className="step-domain">Cluster Setup — 15%</span>
+          <h3>Deploy Windows 11 with Windows Autopilot — Free</h3>
+          <p>Create a Windows Autopilot deployment profile, configure the Enrollment Status Page, register a device using its hardware hash, and complete a user-driven Autopilot deployment of Windows 11. Commit your Autopilot profile configuration and enrollment evidence.</p>
+          <span className="step-domain">Deploy Windows client — 25-30% of exam</span>
         </div>
       </div>
       <div className="step">
         <div className="step-num">2</div>
         <div className="step-text">
-          <h3>System Hardening</h3>
-          <p>Create a custom AppArmor profile and apply it to a pod via annotation, configure a seccomp profile with a syscall allowlist, and deploy pods with dropped capabilities and read-only root filesystem. Commit your AppArmor/seccomp profiles and pod security contexts.</p>
-          <span className="step-domain">System Hardening — 10%</span>
+          <h3>Enroll and Manage Devices in Microsoft Intune</h3>
+          <p>Configure automatic enrollment in Microsoft Intune, set enrollment restrictions by platform, join a Windows device to Microsoft Entra ID, and confirm it appears as managed. Commit your enrollment configuration and device inventory screenshots.</p>
+          <span className="step-domain">Manage, Maintain &amp; Protect Devices — 40-45% of exam</span>
         </div>
       </div>
       <div className="step">
         <div className="step-num">3</div>
         <div className="step-text">
-          <h3>Minimize Microservice Vulnerabilities</h3>
-          <p>Enforce Pod Security Standards on a namespace, deploy OPA Gatekeeper with a custom ConstraintTemplate blocking privileged containers, and secure Kubernetes Secrets with disabled service account token automounting. Commit your Gatekeeper policies and PSS configuration.</p>
-          <span className="step-domain">Minimize Microservice Vulnerabilities — 20%</span>
+          <h3>Configure Device Configuration and Compliance Policies</h3>
+          <p>Create a device configuration profile from the settings catalog, build a compliance policy defining minimum OS and BitLocker requirements, and assign both to a device group. Commit your configuration profile and compliance policy definitions.</p>
+          <span className="step-domain">Manage, Maintain &amp; Protect Devices — 40-45% of exam</span>
         </div>
       </div>
       <div className="step">
         <div className="step-num">4</div>
         <div className="step-text">
-          <h3>Supply Chain Security</h3>
-          <p>Scan a container image with Trivy and output CRITICAL CVEs to a file, write a secure multi-stage Dockerfile with a non-root user, and configure an OPA constraint restricting images to trusted registries. Commit your Trivy scan results and secure Dockerfile.</p>
-          <span className="step-domain">Supply Chain Security — 20%</span>
+          <h3>Protect Endpoints with Compliance, Conditional Access and Defender</h3>
+          <p>Connect Microsoft Defender for Endpoint to Intune, configure a device risk-based Conditional Access policy, and require compliant devices for access to Microsoft 365. Commit your Conditional Access policy and Defender connector evidence.</p>
+          <span className="step-domain">Manage Identity &amp; Compliance — 15-20% of exam</span>
         </div>
       </div>
       <div className="step">
         <div className="step-num">5</div>
         <div className="step-text">
-          <h3>Monitoring, Logging and Runtime Security</h3>
-          <p>Deploy Falco and write a custom rule detecting sensitive file access in containers, configure a Kubernetes audit policy capturing secret access and exec events, and deploy an immutable container configuration with read-only root filesystem. Commit your Falco rules and audit policy.</p>
-          <span className="step-domain">Monitoring, Logging &amp; Runtime Security — 20%</span>
+          <h3>Deploy and Manage Applications with Intune</h3>
+          <p>Add a Microsoft Store app and a Win32 (.intunewin) line-of-business app to Intune, configure required and available assignments, and verify installation on a managed device. Commit your app deployment configuration and install status.</p>
+          <span className="step-domain">Manage Applications — 10-15% of exam</span>
         </div>
       </div>
     </div>
@@ -326,29 +326,29 @@ export default function CksPage() {
         <p>Every completed step auto-commits evidence to your own repo. No fake portfolio templates — real configs, real screenshots, real history.</p>
       </div>
       <div className="benefit">
-        <div className="benefit-icon">☁️</div>
-        <h3>Real CNCF resources</h3>
-        <p>No simulators. You work in the actual CNCF console and tools, the same ones you'll use on the job and in the CKS exam.</p>
+        <div className="benefit-icon">🖥️</div>
+        <h3>Real Intune &amp; Entra</h3>
+        <p>No simulators. You work in the actual Microsoft Intune admin center and Microsoft Entra portal — the same consoles you'll use on the job and on the MD-102 exam.</p>
       </div>
       <div className="benefit">
         <div className="benefit-icon">🤖</div>
         <h3>Cert Buddy AI mentor</h3>
-        <p>Stuck on a step or an exam concept? Cert Buddy is trained on CKS objectives and helps you debug and understand — not just copy-paste.</p>
+        <p>Stuck on a step or an exam concept? Cert Buddy is trained on MD-102 objectives and helps you debug and understand — not just copy-paste.</p>
       </div>
       <div className="benefit">
-        <div className="benefit-icon">💰</div>
-        <h3>Cost alerts built in</h3>
-        <p>Every chargeable resource has a clear alert telling you exactly when to stop, deallocate, or delete — so a lab break doesn't become a surprise bill.</p>
+        <div className="benefit-icon">🆓</div>
+        <h3>Trial-friendly labs</h3>
+        <p>Every MD-102 lab is designed to run inside the free Microsoft 365 E5 and Intune trials, with clear reminders before anything could incur cost.</p>
       </div>
       <div className="benefit">
         <div className="benefit-icon">📄</div>
         <h3>Downloadable lab guide</h3>
-        <p>Get the full CKS lab guide as a PDF — step-by-step instructions, screenshots to capture, and an exam quick-reference section.</p>
+        <p>Get the full MD-102 lab guide as a PDF — step-by-step instructions, screenshots to capture, and an exam quick-reference section.</p>
       </div>
       <div className="benefit">
         <div className="benefit-icon">💵</div>
         <h3>One-time price</h3>
-        <p>$79 once. No subscription, no recurring charges. Or get All-Access to all 22 cert paths for $199.</p>
+        <p>$49 once. No subscription, no recurring charges. Or get All-Access to all 22 cert paths for $199.</p>
       </div>
     </div>
   </div>
@@ -359,28 +359,28 @@ export default function CksPage() {
     <h2 id="faq">Frequently Asked Questions</h2>
     <div className="faq-list">
       <div className="faq-item">
-        <p className="faq-q">Are the CKS hands-on labs free?</p>
-        <p className="faq-a">Project 1 (Cluster Hardening) is completely free, including unlimited access to Cert Buddy for that project and the manual GitHub commit workflow. The remaining 4 projects unlock for a one-time payment of $79.</p>
+        <p className="faq-q">Are the MD-102 hands-on labs free?</p>
+        <p className="faq-a">Project 1 (Deploy Windows with Windows Autopilot) is completely free, including unlimited access to Cert Buddy for that project and the manual GitHub commit workflow. The remaining 4 projects unlock for a one-time payment of $49.</p>
       </div>
       <div className="faq-item">
-        <p className="faq-q">Do I need CKA before CKS?</p>
-        <p className="faq-a">Yes. CKS requires an active CKA certification as a prerequisite — set by the Linux Foundation/CNCF, not by HandsOnCert. CKS builds directly on CKA knowledge and adds security-specific tooling on top.</p>
+        <p className="faq-q">Do I need a Microsoft 365 trial for MD-102 labs?</p>
+        <p className="faq-a">Yes. MD-102 labs use Microsoft Intune and Microsoft Entra ID, both available via a free 30-day Microsoft 365 E5 trial (which includes Intune Plan 1 and Entra ID P2). All labs are designed to complete within the trial period.</p>
       </div>
       <div className="faq-item">
-        <p className="faq-q">What tools do the CKS labs cover?</p>
-        <p className="faq-a">HandsOnCert's CKS labs cover kube-bench, AppArmor, seccomp, OPA Gatekeeper, Trivy, and Falco — the same security tooling tested on the actual CKS exam, applied to real kind clusters and (for cluster hardening) an optional kubeadm-on-EC2 setup.</p>
+        <p className="faq-q">How does the GitHub portfolio auto-commit work for MD-102?</p>
+        <p className="faq-a">When you mark a lab step complete, HandsOnCert commits your configuration screenshots and policy definitions directly to your own GitHub repository via OAuth. Each project gets its own folder with a unique enrollment code.</p>
       </div>
       <div className="faq-item">
-        <p className="faq-q">How does the GitHub portfolio work for CKS labs?</p>
-        <p className="faq-a">When you complete a lab step, HandsOnCert commits your actual Falco rules, OPA Rego policies, Trivy scan output, and hardening configurations to your own GitHub repository — a portfolio that demonstrates real platform security knowledge, which is rare and valuable to employers.</p>
+        <p className="faq-q">How long does the MD-102 path take to complete?</p>
+        <p className="faq-a">The 5 projects take approximately 10 hours total, covering Windows deployment, device enrollment, configuration and compliance, endpoint protection, and application management — the same domains tested on the MD-102 exam.</p>
       </div>
       <div className="faq-item">
-        <p className="faq-q">How long does the CKS path take to complete?</p>
-        <p className="faq-a">The 5 projects take approximately 14 hours total, covering cluster setup/hardening, system hardening, microservice vulnerabilities, supply chain security, and runtime security — the same domains tested on the CKS exam.</p>
+        <p className="faq-q">Is MD-102 a good pairing with SC-300 or AZ-104?</p>
+        <p className="faq-a">Yes. MD-102 (Endpoint Administrator) focuses on managing devices and apps with Microsoft Intune, SC-300 (Identity and Access Administrator) specializes in Microsoft Entra ID, and AZ-104 (Azure Administrator) covers broader Azure infrastructure. MD-102 pairs especially well with SC-300 for modern-workplace and Microsoft 365 administration roles.</p>
       </div>
       <div className="faq-item">
-        <p className="faq-q">Is CKS the hardest Kubernetes certification?</p>
-        <p className="faq-a">Yes, CKS is widely considered the most difficult of the three CNCF Kubernetes certifications. It requires CKA-level knowledge plus an entirely new layer of security tooling, all under the same 2-hour performance-based exam format.</p>
+        <p className="faq-q">Did MD-102 replace MD-100 and MD-101?</p>
+        <p className="faq-a">Yes. MD-102 (Endpoint Administrator) consolidated and replaced the retired MD-100 and MD-101 exams. It is now the single associate-level exam for the Endpoint Administrator certification, centered on Microsoft Intune and modern endpoint management.</p>
       </div>
     </div>
   </div>
@@ -389,7 +389,7 @@ export default function CksPage() {
 <section>
   <div className="container">
     <div className="cta-section">
-      <h2>Build your CKS portfolio today</h2>
+      <h2>Build your MD-102 portfolio today</h2>
       <p>Start Project 1 free — no credit card required. See exactly how the GitHub auto-commit works before you pay anything.</p>
       <a href="https://app.handsoncert.com/signup" className="btn-accent">Start Free →</a>
     </div>
@@ -404,7 +404,7 @@ export default function CksPage() {
       <a href="/azure/">Azure</a>
       <a href="/aws/">AWS</a>
       <a href="/gcp/">GCP</a>
-      <a href="/hashicorp/">HashiCorp</a>
+      <a href="/cncf/">CNCF</a>
     </p>
   </div>
 </footer>

@@ -3,14 +3,14 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'All Cert Paths | HandsOnCert',
   description:
-    '21 hands-on cloud certification paths across Azure, AWS, GCP, HashiCorp, and CNCF. Real projects, GitHub portfolio auto-commit. Pay once per cert — no subscription.',
+    '22 hands-on cloud certification paths across Azure, Microsoft 365, AWS, GCP, HashiCorp, and CNCF. Real projects, GitHub portfolio auto-commit. Pay once per cert — no subscription.',
   alternates: {
     canonical: 'https://www.handsoncert.com/certs/',
   },
   openGraph: {
     title: 'All Cert Paths | HandsOnCert',
     description:
-      '21 hands-on cloud certification paths. Real projects, GitHub portfolio auto-commit. Pay once per cert.',
+      '22 hands-on cloud certification paths. Real projects, GitHub portfolio auto-commit. Pay once per cert.',
     type: 'website',
     url: 'https://www.handsoncert.com/certs/',
   },
@@ -29,6 +29,7 @@ type Provider = {
   name: string
   color: string
   tagClass: string
+  tagLabel: string
   certs: Cert[]
 }
 
@@ -37,6 +38,7 @@ const providers: Provider[] = [
     name: 'Microsoft Azure',
     color: '#0078D4',
     tagClass: 'tag-azure',
+    tagLabel: 'Azure',
     certs: [
       { id: 'AZ-104', name: 'Microsoft Azure Administrator',                       price: 49, projects: 5, hours: 6,  slug: 'az-104' },
       { id: 'AZ-900', name: 'Microsoft Azure Fundamentals',                        price: 29, projects: 3, hours: 3,  slug: 'az-900' },
@@ -48,9 +50,19 @@ const providers: Provider[] = [
     ],
   },
   {
+    name: 'Microsoft 365',
+    color: '#0078D4',
+    tagClass: 'tag-m365',
+    tagLabel: 'M365',
+    certs: [
+      { id: 'MD-102', name: 'Microsoft 365 Endpoint Administrator',                price: 49, projects: 5, hours: 10, slug: 'md-102' },
+    ],
+  },
+  {
     name: 'Amazon Web Services',
     color: '#F59E0B',
     tagClass: 'tag-aws',
+    tagLabel: 'AWS',
     certs: [
       { id: 'SAA-C03', name: 'AWS Solutions Architect Associate',  price: 49, projects: 5, hours: 6,  slug: 'saa-c03' },
       { id: 'CLF-C02', name: 'AWS Cloud Practitioner',             price: 29, projects: 3, hours: 3,  slug: 'clf-c02' },
@@ -64,6 +76,7 @@ const providers: Provider[] = [
     name: 'Google Cloud',
     color: '#34A853',
     tagClass: 'tag-gcp',
+    tagLabel: 'GCP',
     certs: [
       { id: 'GCP-ACE',  name: 'Google Cloud Associate Cloud Engineer',             price: 49, projects: 5, hours: 6,  slug: 'gcp-ace'  },
       { id: 'GCP-PCA',  name: 'Google Cloud Professional Cloud Architect',         price: 79, projects: 5, hours: 10, slug: 'gcp-pca'  },
@@ -75,6 +88,7 @@ const providers: Provider[] = [
     name: 'HashiCorp',
     color: '#7B42BC',
     tagClass: 'tag-hashicorp',
+    tagLabel: 'HashiCorp',
     certs: [
       { id: 'TF-003', name: 'HashiCorp Certified Terraform Associate', price: 29, projects: 3, hours: 4, slug: 'tf-003' },
     ],
@@ -83,6 +97,7 @@ const providers: Provider[] = [
     name: 'CNCF / Kubernetes',
     color: '#326CE5',
     tagClass: 'tag-cncf',
+    tagLabel: 'CNCF',
     certs: [
       { id: 'CKA',  name: 'Certified Kubernetes Administrator',          price: 79, projects: 5, hours: 12, slug: 'cka'  },
       { id: 'CKAD', name: 'Certified Kubernetes Application Developer',  price: 79, projects: 5, hours: 10, slug: 'ckad' },
@@ -170,6 +185,7 @@ nav {
 .cert-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
 .cert-provider-tag { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 4px; font-family: var(--mono); letter-spacing: 0.04em; }
 .tag-azure     { background: rgba(0,120,212,0.15); color: #60A5FA; border: 0.5px solid rgba(0,120,212,0.3); }
+.tag-m365      { background: rgba(0,120,212,0.18); color: #7CC4FF; border: 0.5px solid rgba(0,120,212,0.4); }
 .tag-aws       { background: rgba(245,158,11,0.12); color: #FCD34D; border: 0.5px solid rgba(245,158,11,0.3); }
 .tag-gcp       { background: rgba(52,168,83,0.12); color: #6EE7B7; border: 0.5px solid rgba(52,168,83,0.3); }
 .tag-hashicorp { background: rgba(123,66,188,0.15); color: #C4B5FD; border: 0.5px solid rgba(123,66,188,0.3); }
@@ -233,7 +249,7 @@ export default function CertsPage() {
         <div className="nav-inner">
           <a href="/" className="logo">HandsOn<span>Cert</span></a>
           <div className="nav-right">
-            <div className="nav-pill">21 cert paths live</div>
+            <div className="nav-pill">22 cert paths live</div>
             <a href="https://app.handsoncert.com/signup" className="nav-cta">Start building →</a>
           </div>
         </div>
@@ -248,8 +264,8 @@ export default function CertsPage() {
       <div className="page-header">
         <div className="page-header-inner">
           <div className="eyebrow">Cert paths</div>
-          <h1>All 21 cert paths — live now</h1>
-          <p>Hands-on projects mapped to official exam objectives across Azure, AWS, GCP, HashiCorp, and CNCF. Project 1 of any cert is free — no card required.</p>
+          <h1>All 22 cert paths — live now</h1>
+          <p>Hands-on projects mapped to official exam objectives across Azure, Microsoft 365, AWS, GCP, HashiCorp, and CNCF. Project 1 of any cert is free — no card required.</p>
         </div>
       </div>
 
@@ -268,7 +284,7 @@ export default function CertsPage() {
               {provider.certs.map((cert) => (
                 <a key={cert.id} href={`/certs/${cert.slug}/`} className="cert-card">
                   <div className="cert-top">
-                    <span className={`cert-provider-tag ${provider.tagClass}`}>{provider.name.split(' ')[0] === 'Microsoft' ? 'Azure' : provider.name.split(' ')[0] === 'Amazon' ? 'AWS' : provider.name.split(' ')[0] === 'Google' ? 'GCP' : provider.name.split(' ')[0]}</span>
+                    <span className={`cert-provider-tag ${provider.tagClass}`}>{provider.tagLabel}</span>
                     <span className="cert-status-live">Live</span>
                   </div>
                   <div className="cert-id">{cert.id}</div>
@@ -288,7 +304,7 @@ export default function CertsPage() {
 
         <div className="all-access-banner">
           <div className="aa-left">
-            <strong>All-Access Pass — all 21 cert paths, forever</strong>
+            <strong>All-Access Pass — all 22 cert paths, forever</strong>
             <span>Every cert that ships, past and future. One payment. Lifetime access.</span>
           </div>
           <div className="aa-right">

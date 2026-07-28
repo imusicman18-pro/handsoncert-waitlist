@@ -6,7 +6,7 @@ const HTML = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HandsOnCert — Learn · Build · Prove</title>
-<meta name="description" content="Hands-on cloud certification labs with real projects, GitHub portfolio commits, and an AI mentor. 21 cert paths live now. Pay once per cert — no subscription.">
+<meta name="description" content="Hands-on cloud certification labs with real projects, GitHub portfolio commits, and an AI mentor. 22 cert paths live now. Pay once per cert — no subscription.">
 <meta name="google-site-verification" content="Rz7JBMdk6TFZSDJ_VzeEYaSNX3Zjrk5g5idui8bD4zs">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -480,7 +480,7 @@ const HTML = `<!DOCTYPE html>
   <div class="nav-inner">
     <a href="/" class="logo">HandsOn<span>Cert</span></a>
     <div class="nav-right">
-      <div class="nav-pill">21 cert paths live</div>
+      <div class="nav-pill">22 cert paths live</div>
       <a href="https://app.handsoncert.com" class="nav-cta">Start building →</a>
     </div>
   </div>
@@ -491,7 +491,7 @@ const HTML = `<!DOCTYPE html>
   <div class="hero-inner">
     <div class="live-badge">
       <span class="live-dot"></span>
-      Platform live — 21 cert paths available now
+      Platform live — 22 cert paths available now
     </div>
     <p style="font-size:19px; color:#94A3B8; margin-bottom:0.5rem;">
       The cert gets you the interview.
@@ -678,7 +678,7 @@ const HTML = `<!DOCTYPE html>
     </div>
 
     <div style="text-align:center; margin-top: 1.25rem;">
-      <a href="/certs/" class="btn-ghost" style="font-size:14px;">View all 21 certs →</a>
+      <a href="/certs/" class="btn-ghost" style="font-size:14px;">View all 22 certs →</a>
     </div>
   </div>
 </section>
@@ -804,7 +804,7 @@ const HTML = `<!DOCTYPE html>
       <div class="step-block">
         <div class="step-n">STEP 01</div>
         <h3>Pick your cert path</h3>
-        <p>Choose from 21 live paths across Azure, AWS, GCP, HashiCorp, and CNCF. Project 1 of any cert is completely free.</p>
+        <p>Choose from 22 live paths across Azure, AWS, GCP, HashiCorp, and CNCF. Project 1 of any cert is completely free.</p>
       </div>
       <div class="step-block">
         <div class="step-n">STEP 02</div>
@@ -891,8 +891,8 @@ const HTML = `<!DOCTYPE html>
 <section class="section">
   <div class="sec-inner">
     <div class="sec-eyebrow">Roadmap</div>
-    <div class="sec-title">Multi-cloud. Multi-track. 21 cert paths live.</div>
-    <p class="sec-sub">Every cert path built from official exam objectives. All 21 paths live now — SC-500 and AI-901 coming when Microsoft publishes objectives.</p>
+    <div class="sec-title">Multi-cloud. Multi-track. 22 cert paths live.</div>
+    <p class="sec-sub">Every cert path built from official exam objectives. All 22 paths live now — SC-500 and AI-901 coming when Microsoft publishes objectives.</p>
 
     <div class="roadmap-track">
       <div class="track-label"><span class="track-dot" style="background:#0078D4;"></span>Microsoft Azure</div>

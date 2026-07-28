@@ -180,7 +180,7 @@ export default function DVAC02vsSOAC03Page() {
               <span className="hands">HandsOn</span><span className="cert">Cert</span>
             </a>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <div className="nav-pill">21 cert paths live</div>
+              <div className="nav-pill">22 cert paths live</div>
               <a href="https://app.handsoncert.com/signup" className="nav-cta">Start building →</a>
             </div>
           </div>

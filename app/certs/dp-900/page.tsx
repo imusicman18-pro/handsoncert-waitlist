@@ -220,7 +220,7 @@ export default function Dp900Page() {
     <div className="nav-inner">
       <a href="/" className="logo"><span className="hands">HandsOn</span><span className="cert">Cert</span></a>
       <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-        <div className="nav-pill">21 cert paths live</div>
+        <div className="nav-pill">22 cert paths live</div>
         <a href="https://app.handsoncert.com/signup" className="nav-cta">Start building →</a>
       </div>
     </div>
@@ -322,7 +322,7 @@ export default function Dp900Page() {
       <div className="benefit">
         <div className="benefit-icon">💵</div>
         <h3>One-time price</h3>
-        <p>$29 once. No subscription, no recurring charges. Or get All-Access to all 21 cert paths for $199.</p>
+        <p>$29 once. No subscription, no recurring charges. Or get All-Access to all 22 cert paths for $199.</p>
       </div>
     </div>
   </div>
