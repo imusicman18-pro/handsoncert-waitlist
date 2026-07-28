@@ -524,7 +524,7 @@ const HTML = `<!DOCTYPE html>
 <div class="stat-bar">
   <div class="stat-inner">
     <div class="stat-item">
-      <div class="stat-num">21</div>
+      <div class="stat-num">22</div>
       <div class="stat-label">Live cert paths</div>
     </div>
     <div class="stat-item">
