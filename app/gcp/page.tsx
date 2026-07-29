@@ -184,7 +184,7 @@ export default function GCPPage() {
               <span className="hands">HandsOn</span><span className="cert">Cert</span>
             </a>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-              <div className="nav-pill">22 cert paths live</div>
+              <div className="nav-pill">23 cert paths live</div>
               <a href="https://app.handsoncert.com/signup" className="nav-cta">Start building →</a>
             </div>
           </div>
@@ -322,7 +322,7 @@ export default function GCPPage() {
             <div className="benefit">
               <div className="benefit-icon">💵</div>
               <h3>One-time pricing</h3>
-              <p>$49–$79 per cert, once. Or get All-Access to all 22 cert paths — every GCP path included — for $199.</p>
+              <p>$49–$79 per cert, once. Or get All-Access to all 23 cert paths — every GCP path included — for $199.</p>
             </div>
           </div>
         </div>

@@ -51,14 +51,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: 'https://www.handsoncert.com/microsoft-365/',
+      lastModified: new Date('2026-07-29'),
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
       url: 'https://www.handsoncert.com/certs/',
-      lastModified: new Date('2026-07-28'),
+      lastModified: new Date('2026-07-29'),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: 'https://www.handsoncert.com/certs/md-102/',
       lastModified: new Date('2026-07-28'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.handsoncert.com/certs/ms-102/',
+      lastModified: new Date('2026-07-29'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },

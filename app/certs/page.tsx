@@ -3,14 +3,14 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'All Cert Paths | HandsOnCert',
   description:
-    '22 hands-on cloud certification paths across Azure, Microsoft 365, AWS, GCP, HashiCorp, and CNCF. Real projects, GitHub portfolio auto-commit. Pay once per cert — no subscription.',
+    '23 hands-on cloud certification paths across Azure, Microsoft 365, AWS, GCP, HashiCorp, and CNCF. Real projects, GitHub portfolio auto-commit. Pay once per cert — no subscription.',
   alternates: {
     canonical: 'https://www.handsoncert.com/certs/',
   },
   openGraph: {
     title: 'All Cert Paths | HandsOnCert',
     description:
-      '22 hands-on cloud certification paths. Real projects, GitHub portfolio auto-commit. Pay once per cert.',
+      '23 hands-on cloud certification paths. Real projects, GitHub portfolio auto-commit. Pay once per cert.',
     type: 'website',
     url: 'https://www.handsoncert.com/certs/',
   },
@@ -56,6 +56,7 @@ const providers: Provider[] = [
     tagLabel: 'M365',
     certs: [
       { id: 'MD-102', name: 'Microsoft 365 Endpoint Administrator',                price: 49, projects: 5, hours: 10, slug: 'md-102' },
+      { id: 'MS-102', name: 'Microsoft 365 Administrator Expert',                  price: 79, projects: 5, hours: 12, slug: 'ms-102' },
     ],
   },
   {
@@ -249,7 +250,7 @@ export default function CertsPage() {
         <div className="nav-inner">
           <a href="/" className="logo">HandsOn<span>Cert</span></a>
           <div className="nav-right">
-            <div className="nav-pill">22 cert paths live</div>
+            <div className="nav-pill">23 cert paths live</div>
             <a href="https://app.handsoncert.com/signup" className="nav-cta">Start building →</a>
           </div>
         </div>
@@ -264,7 +265,7 @@ export default function CertsPage() {
       <div className="page-header">
         <div className="page-header-inner">
           <div className="eyebrow">Cert paths</div>
-          <h1>All 22 cert paths — live now</h1>
+          <h1>All 23 cert paths — live now</h1>
           <p>Hands-on projects mapped to official exam objectives across Azure, Microsoft 365, AWS, GCP, HashiCorp, and CNCF. Project 1 of any cert is free — no card required.</p>
         </div>
       </div>
@@ -304,7 +305,7 @@ export default function CertsPage() {
 
         <div className="all-access-banner">
           <div className="aa-left">
-            <strong>All-Access Pass — all 22 cert paths, forever</strong>
+            <strong>All-Access Pass — all 23 cert paths, forever</strong>
             <span>Every cert that ships, past and future. One payment. Lifetime access.</span>
           </div>
           <div className="aa-right">
