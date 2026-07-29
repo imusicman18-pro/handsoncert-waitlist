@@ -357,8 +357,8 @@ export default function Microsoft365Page() {
             <a href="/certs/">All Certs</a>
             <a href="/certs/md-102/">MD-102</a>
             <a href="/certs/ms-102/">MS-102</a>
-            <a href="/azure/">Azure</a>
-            <a href="/aws/">AWS</a>
+            <a href="/certs/sc-300/">SC-300</a>
+            <a href="/compare/ms-102-vs-sc-300/">Compare: MS-102 vs SC-300</a>
           </p>
         </div>
       </footer>

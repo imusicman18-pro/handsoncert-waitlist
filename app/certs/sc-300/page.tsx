@@ -401,10 +401,12 @@ export default function Sc300Page() {
     <p>© 2026 HandsOnCert &nbsp;·&nbsp; Learn · Build · Prove &nbsp;·&nbsp;
       <a href="/">Home</a>
       <a href="/certs/">All Certs</a>
+      <a href="/microsoft-365/">Microsoft 365</a>
       <a href="/aws/">AWS</a>
       <a href="/gcp/">GCP</a>
       <a href="/hashicorp/">HashiCorp</a>
       <a href="/cncf/">CNCF</a>
+      <a href="/compare/ms-102-vs-sc-300/">Compare: MS-102 vs SC-300</a>
     </p>
   </div>
 </footer>

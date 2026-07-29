@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
+      url: 'https://www.handsoncert.com/compare/ms-102-vs-sc-300/',
+      lastModified: new Date('2026-07-29'),
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
       url: 'https://www.handsoncert.com/cncf/',
       lastModified: new Date('2026-06-12'),
       changeFrequency: 'weekly',

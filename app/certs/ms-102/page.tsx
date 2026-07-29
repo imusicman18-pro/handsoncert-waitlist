@@ -340,10 +340,10 @@ export default function Ms102Page() {
     <p>© 2026 HandsOnCert &nbsp;·&nbsp; Learn · Build · Prove &nbsp;·&nbsp;
       <a href="/">Home</a>
       <a href="/certs/">All Certs</a>
+      <a href="/microsoft-365/">Microsoft 365</a>
       <a href="/certs/md-102/">MD-102</a>
       <a href="/certs/sc-300/">SC-300</a>
-      <a href="/azure/">Azure</a>
-      <a href="/aws/">AWS</a>
+      <a href="/compare/ms-102-vs-sc-300/">Compare: MS-102 vs SC-300</a>
     </p>
   </div>
 </footer>
