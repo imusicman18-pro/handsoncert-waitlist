@@ -51,7 +51,7 @@ const faqSchema = {
     {
       "@type": "Question",
       "name": "What environment do I need for the MS-102 labs?",
-      "acceptedAnswer": { "@type": "Answer", "text": "MS-102 labs run in a free Microsoft 365 Developer tenant, which includes Entra ID P2, Defender XDR, and Purview at no cost. There are no cloud resource charges — the only thing to watch is keeping your developer tenant active. If you already created a tenant for MD-102, you can reuse the same one." }
+      "acceptedAnswer": { "@type": "Answer", "text": "MS-102 labs run in a Microsoft 365 tenant with Entra ID P2, Defender XDR, and Purview. You get one via the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial — no cloud resource charges either way. Plan ~10–12 hours of lab time within your tenant’s active window. If you already set up a tenant for MD-102, reuse it." }
     },
     {
       "@type": "Question",
@@ -195,7 +195,7 @@ export default function Ms102Page() {
       <a href="https://app.handsoncert.com/signup" className="btn-primary">Start Free →</a>
       <a href="#projects" className="btn-secondary">See the 5 projects</a>
     </div>
-    <p className="hero-note">$79 one-time · Project 1 free · Free Microsoft 365 Developer tenant · No cloud charges</p>
+    <p className="hero-note">$79 one-time · Project 1 free · Microsoft 365 E5 trial or Developer Program · No cloud charges</p>
   </div>
 
   <div className="stats">
@@ -271,8 +271,8 @@ export default function Ms102Page() {
       </div>
       <div className="benefit">
         <div className="benefit-icon">🆓</div>
-        <h3>Free tenant, no cloud charges</h3>
-        <p>Labs run in a free Microsoft 365 Developer tenant with Entra ID P2, Defender XDR, and Purview included. No resource charges — just keep your tenant active. Reuse your MD-102 tenant if you have one.</p>
+        <h3>Lab tenant, no cloud charges</h3>
+        <p>Labs run in a Microsoft 365 tenant with Entra ID P2, Defender XDR, and Purview — from the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial. No cloud resource charges; plan ~10–12 hours within your tenant’s active window. Reuse your MD-102 tenant if you have one.</p>
       </div>
       <div className="benefit">
         <div className="benefit-icon">🤖</div>
@@ -303,7 +303,7 @@ export default function Ms102Page() {
       </div>
       <div className="faq-item">
         <p className="faq-q">What environment do I need for the MS-102 labs?</p>
-        <p className="faq-a">MS-102 labs run in a free Microsoft 365 Developer tenant, which includes Entra ID P2, Defender XDR, and Purview at no cost. There are no cloud resource charges — the only thing to watch is keeping your developer tenant active. If you already created a tenant for MD-102, you can reuse the same one.</p>
+        <p className="faq-a">MS-102 labs run in a Microsoft 365 tenant with Entra ID P2, Defender XDR, and Purview. You get one via the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial — no cloud resource charges either way. Plan ~10–12 hours of lab time within your tenant’s active window. If you already set up a tenant for MD-102, reuse it.</p>
       </div>
       <div className="faq-item">
         <p className="faq-q">What certification does MS-102 earn?</p>

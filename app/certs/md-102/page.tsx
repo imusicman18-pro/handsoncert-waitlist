@@ -91,7 +91,7 @@ const faqSchema = {
       "name": "Do I need a Microsoft 365 trial for MD-102 labs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. MD-102 labs use Microsoft Intune and Microsoft Entra ID, both available via a free 30-day Microsoft 365 E5 trial (which includes Intune Plan 1 and Entra ID P2). All labs are designed to complete within the trial period."
+        "text": "Yes. MD-102 labs use Microsoft Intune, Entra ID P2, and Defender for Endpoint. You get a tenant via the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial (30 days) — no cloud resource charges either way. Plan ~10–12 hours of lab time so you finish within your tenant’s active window."
       }
     },
     {
@@ -338,7 +338,7 @@ export default function Md102Page() {
       <div className="benefit">
         <div className="benefit-icon">🆓</div>
         <h3>Trial-friendly labs</h3>
-        <p>Every MD-102 lab is designed to run inside the free Microsoft 365 E5 and Intune trials, with clear reminders before anything could incur cost.</p>
+        <p>Every MD-102 lab runs in a Microsoft 365 tenant (Developer Program or a time-limited E5 trial) with Intune and Entra ID P2 — no cloud charges. Plan ~10–12 hours so you finish within your tenant’s active window.</p>
       </div>
       <div className="benefit">
         <div className="benefit-icon">📄</div>
@@ -364,7 +364,7 @@ export default function Md102Page() {
       </div>
       <div className="faq-item">
         <p className="faq-q">Do I need a Microsoft 365 trial for MD-102 labs?</p>
-        <p className="faq-a">Yes. MD-102 labs use Microsoft Intune and Microsoft Entra ID, both available via a free 30-day Microsoft 365 E5 trial (which includes Intune Plan 1 and Entra ID P2). All labs are designed to complete within the trial period.</p>
+        <p className="faq-a">Yes. MD-102 labs use Microsoft Intune, Entra ID P2, and Defender for Endpoint. You get a tenant via the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial (30 days) — no cloud resource charges either way. Plan ~10–12 hours of lab time so you finish within your tenant’s active window.</p>
       </div>
       <div className="faq-item">
         <p className="faq-q">How does the GitHub portfolio auto-commit work for MD-102?</p>

@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'What environment do the Microsoft 365 labs use?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Both MD-102 and MS-102 labs run in a free Microsoft 365 Developer tenant, which includes Microsoft Intune, Entra ID P2, Defender XDR, and Purview at no cost. There are no cloud resource charges — the only thing to watch is keeping your developer tenant active. You can reuse the same tenant across both certifications.',
+        text: 'Both MD-102 and MS-102 labs run in a Microsoft 365 tenant with Intune, Entra ID P2, Defender XDR, and Purview. You get one via the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial — no cloud resource charges either way. Plan ~10–12 hours of lab time while your tenant is active. Reuse the same tenant across both certifications.',
       },
     },
     {
@@ -285,8 +285,8 @@ export default function Microsoft365Page() {
             </div>
             <div className="benefit">
               <div className="benefit-icon">🆓</div>
-              <h3>Free tenant, no cloud charges</h3>
-              <p>Both certs run in a free Microsoft 365 Developer tenant with Intune, Entra ID P2, Defender XDR, and Purview included. Reuse the same tenant across MD-102 and MS-102.</p>
+              <h3>Lab tenant, no cloud charges</h3>
+              <p>Both certs run in a Microsoft 365 tenant with Intune, Entra ID P2, Defender XDR, and Purview — from the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial. No cloud charges; plan ~10–12 hours while your tenant is active. Reuse the same tenant across MD-102 and MS-102.</p>
             </div>
             <div className="benefit">
               <div className="benefit-icon">🤖</div>
@@ -326,7 +326,7 @@ export default function Microsoft365Page() {
             </div>
             <div className="faq-item">
               <p className="faq-q">What environment do the Microsoft 365 labs use?</p>
-              <p className="faq-a">Both MD-102 and MS-102 labs run in a free Microsoft 365 Developer tenant, which includes Microsoft Intune, Entra ID P2, Defender XDR, and Purview at no cost. There are no cloud resource charges — the only thing to watch is keeping your developer tenant active. You can reuse the same tenant across both certifications.</p>
+              <p className="faq-a">Both MD-102 and MS-102 labs run in a Microsoft 365 tenant with Intune, Entra ID P2, Defender XDR, and Purview. You get one via the Microsoft 365 Developer Program (requires a qualifying Visual Studio Professional/Enterprise subscription, or ISV Success/MAICPP membership) or a time-limited Microsoft 365 E5 trial — no cloud resource charges either way. Plan ~10–12 hours of lab time while your tenant is active. Reuse the same tenant across both certifications.</p>
             </div>
             <div className="faq-item">
               <p className="faq-q">How do the Microsoft 365 certs relate to SC-300 and Azure certs?</p>
