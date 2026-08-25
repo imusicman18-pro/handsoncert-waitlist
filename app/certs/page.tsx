@@ -101,7 +101,7 @@ const providers: Provider[] = [
     tagLabel: 'CNCF',
     certs: [
       { id: 'CKA',  name: 'Certified Kubernetes Administrator',          price: 79, projects: 5, hours: 12, slug: 'cka'  },
-      { id: 'CKAD', name: 'Certified Kubernetes Application Developer',  price: 79, projects: 5, hours: 10, slug: 'ckad' },
+      { id: 'CKAD', name: 'Certified Kubernetes Application Developer',  price: 49, projects: 5, hours: 10, slug: 'ckad' },
       { id: 'CKS',  name: 'Certified Kubernetes Security Specialist',    price: 79, projects: 5, hours: 10, slug: 'cks'  },
     ],
   },
