@@ -146,6 +146,16 @@ const courseSchema = {
   }
 }
 
+const techArticleSchema = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "AZ-305 Hands-On Labs",
+  "description": "AZ-305 Azure Solutions Architect Expert hands-on labs. 5 real Azure architecture projects, auto-committed to your GitHub portfolio. $79 one-time, Project 1 free.",
+  "author": { "@type": "Organization", "name": "HandsOnCert", "sameAs": "https://www.handsoncert.com" },
+  "publisher": { "@type": "Organization", "name": "HandsOnCert", "sameAs": "https://www.handsoncert.com" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.handsoncert.com/certs/az-305/" },
+}
+
 const pageStyles = `* { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --bg-dark: #0F172A;
@@ -225,6 +235,7 @@ export default function Az305Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }} />
 <nav>
   <div className="container">
     <div className="nav-inner">

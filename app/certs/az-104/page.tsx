@@ -127,6 +127,16 @@ const courseSchema = {
   offers: { '@type': 'Offer', price: '49', priceCurrency: 'USD' },
 }
 
+const techArticleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TechArticle',
+  headline: 'AZ-104 Hands-On Labs',
+  description: 'AZ-104 Azure Administrator Associate hands-on labs. 5 real Azure projects, auto-committed to your GitHub portfolio. $49 one-time, Project 1 free.',
+  author: { '@type': 'Organization', name: 'HandsOnCert', sameAs: 'https://www.handsoncert.com' },
+  publisher: { '@type': 'Organization', name: 'HandsOnCert', sameAs: 'https://www.handsoncert.com' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.handsoncert.com/certs/az-104/' },
+}
+
 const pageStyles = `
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -221,6 +231,7 @@ export default function AZ104Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }} />
 
       <nav>
         <div className="container">
