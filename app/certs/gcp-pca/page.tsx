@@ -146,6 +146,16 @@ const courseSchema = {
   }
 }
 
+const techArticleSchema = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "GCP-PCA Hands-On Labs",
+  "description": "Professional Cloud Architect hands-on labs. 5 real Google Cloud architecture projects based on official case studies, auto-committed to your GitHub portfolio. $79 one-time.",
+  "author": { "@type": "Organization", "name": "HandsOnCert", "sameAs": "https://www.handsoncert.com" },
+  "publisher": { "@type": "Organization", "name": "HandsOnCert", "sameAs": "https://www.handsoncert.com" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.handsoncert.com/certs/gcp-pca/" },
+}
+
 const pageStyles = `* { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --bg-dark: #0F172A;
@@ -225,6 +235,7 @@ export default function GcpPcaPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }} />
 <nav>
   <div className="container">
     <div className="nav-inner">

@@ -136,6 +136,16 @@ const courseSchema = {
   }
 }
 
+const techArticleSchema = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "CLF-C02 Hands-On Labs",
+  "description": "CLF-C02 AWS Cloud Practitioner hands-on labs. 3 real AWS projects, auto-committed to your GitHub portfolio. $29 one-time, Project 1 free.",
+  "author": { "@type": "Organization", "name": "HandsOnCert", "sameAs": "https://www.handsoncert.com" },
+  "publisher": { "@type": "Organization", "name": "HandsOnCert", "sameAs": "https://www.handsoncert.com" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.handsoncert.com/certs/clf-c02/" },
+}
+
 const pageStyles = `* { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --bg-dark: #0F172A;
@@ -215,6 +225,7 @@ export default function ClfC02Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleSchema) }} />
 <nav>
   <div className="container">
     <div className="nav-inner">

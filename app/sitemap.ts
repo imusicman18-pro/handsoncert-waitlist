@@ -1,210 +1,90 @@
 import type { MetadataRoute } from 'next'
+import fs from 'fs'
+import path from 'path'
+import { execSync } from 'child_process'
+
+const BASE_URL = 'https://www.handsoncert.com'
+const FALLBACK_DATE = new Date('2026-07-29')
+
+// Real per-file last-modified date from git history, computed once at build time.
+// Falls back to a fixed date if git isn't available (e.g. a shallow-clone build
+// environment) rather than fabricating a "just built" timestamp.
+function lastModified(relPath: string): Date {
+  try {
+    const iso = execSync(`git log -1 --format=%cI -- "${relPath}"`, {
+      cwd: process.cwd(),
+      stdio: ['ignore', 'pipe', 'ignore'],
+    })
+      .toString()
+      .trim()
+    return iso ? new Date(iso) : FALLBACK_DATE
+  } catch {
+    return FALLBACK_DATE
+  }
+}
+
+// Auto-discovers page directories so new certs/comparisons show up in the
+// sitemap without a manual edit here.
+function listPageDirs(relDir: string): string[] {
+  const abs = path.join(process.cwd(), relDir)
+  if (!fs.existsSync(abs)) return []
+  return fs
+    .readdirSync(abs, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && fs.existsSync(path.join(abs, entry.name, 'page.tsx')))
+    .map((entry) => entry.name)
+    .sort()
+}
+
+// Provider hub pages: small, stable set. Not auto-discovered like certs/compare
+// because they're sibling top-level app/ directories alongside non-page folders
+// (fonts, etc.) with no shared parent to scan.
+const HUB_SLUGS = ['azure', 'gcp', 'cncf', 'hashicorp', 'microsoft-365']
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const certSlugs = listPageDirs('app/certs')
+  const compareSlugs = listPageDirs('app/compare')
+
+  const entries: MetadataRoute.Sitemap = [
     {
-      url: 'https://www.handsoncert.com/compare/dva-c02-vs-soa-c03/',
-      lastModified: new Date('2026-06-13'),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: 'https://www.handsoncert.com/compare/saa-c03-vs-sap-c02/',
-      lastModified: new Date('2026-06-13'),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: 'https://www.handsoncert.com/compare/az-104-vs-az-305/',
-      lastModified: new Date('2026-06-13'),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: 'https://www.handsoncert.com/compare/cka-vs-ckad/',
-      lastModified: new Date('2026-06-13'),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: 'https://www.handsoncert.com/compare/ms-102-vs-sc-300/',
-      lastModified: new Date('2026-07-29'),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: 'https://www.handsoncert.com/cncf/',
-      lastModified: new Date('2026-06-12'),
+      url: `${BASE_URL}/`,
+      lastModified: lastModified('app/route.ts'),
       changeFrequency: 'weekly',
-      priority: 0.85,
+      priority: 1.0,
     },
     {
-      url: 'https://www.handsoncert.com/hashicorp/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/gcp/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.handsoncert.com/azure/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.handsoncert.com/microsoft-365/',
-      lastModified: new Date('2026-07-29'),
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/',
-      lastModified: new Date('2026-07-29'),
+      url: `${BASE_URL}/certs/`,
+      lastModified: lastModified('app/certs/page.tsx'),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
-    {
-      url: 'https://www.handsoncert.com/certs/md-102/',
-      lastModified: new Date('2026-07-28'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/ms-102/',
-      lastModified: new Date('2026-07-29'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/az-104/',
-      lastModified: new Date('2026-06-11'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/az-900/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/az-305/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/az-400/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/sc-300/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/sc-900/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/dp-900/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/clf-c02/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/saa-c03/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/dva-c02/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/soa-c03/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/sap-c02/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/scs-c03/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/gcp-ace/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/gcp-pca/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/gcp-pde/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/gcp-pcse/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/tf-003/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/cka/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/ckad/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.handsoncert.com/certs/cks/',
-      lastModified: new Date('2026-06-12'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
   ]
+
+  for (const slug of certSlugs) {
+    entries.push({
+      url: `${BASE_URL}/certs/${slug}/`,
+      lastModified: lastModified(`app/certs/${slug}/page.tsx`),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    })
+  }
+
+  for (const slug of compareSlugs) {
+    entries.push({
+      url: `${BASE_URL}/compare/${slug}/`,
+      lastModified: lastModified(`app/compare/${slug}/page.tsx`),
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    })
+  }
+
+  for (const slug of HUB_SLUGS) {
+    entries.push({
+      url: `${BASE_URL}/${slug}/`,
+      lastModified: lastModified(`app/${slug}/page.tsx`),
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    })
+  }
+
+  return entries
 }
